@@ -89,7 +89,9 @@ const projectsData = {
 };
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
+    slug: string;
+  }> | {
     slug: string;
   };
 }
