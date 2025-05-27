@@ -94,8 +94,9 @@ type Props = {
   };
 };
 
-export default async function ProjectPage({ params }: Props) {
-  const project = projectsData[params.slug as keyof typeof projectsData];
+export default async function ProjectPage(props: Props)  {
+  const slug = props.params.slug;
+  const project = projectsData[slug as keyof typeof projectsData];
 
   if (!project) {
     notFound();
