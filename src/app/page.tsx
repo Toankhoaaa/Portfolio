@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-8">
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Hello, I'm <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">Le Toan</span>
+                  Hello, I&apos;m <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">Le Toan</span>
                 </h1>
                 <p className="text-xl text-muted-foreground md:text-2xl">
                   Full-Stack Developer
