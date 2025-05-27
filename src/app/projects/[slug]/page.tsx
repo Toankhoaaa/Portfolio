@@ -88,7 +88,7 @@ const projectsData = {
   }
 };
 
-export interface ProjectPageProps {
+interface ProjectPageProps {
   params: {
     slug: string;
   };
