@@ -88,18 +88,14 @@ const projectsData = {
   }
 };
 
-interface ProjectPageProps {
-  params: Promise<{
-    slug: string;
-  }> | {
+type Props = {
+  params: {
     slug: string;
   };
-}
+};
 
-export default async function ProjectPage({ params }: ProjectPageProps) {
-  const resolvedParams = await params;
-  const { slug } = resolvedParams;
-  const project = projectsData[slug as keyof typeof projectsData];
+export default async function ProjectPage({ params }: Props) {
+  const project = projectsData[params.slug as keyof typeof projectsData];
 
   if (!project) {
     notFound();
