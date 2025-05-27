@@ -88,7 +88,13 @@ const projectsData = {
   }
 };
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = params;
   const project = projectsData[slug as keyof typeof projectsData];
 
