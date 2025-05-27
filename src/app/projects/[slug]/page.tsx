@@ -88,14 +88,15 @@ const projectsData = {
   }
 };
 
-interface ProjectPageProps {
+export interface ProjectPageProps {
   params: {
     slug: string;
   };
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
   const project = projectsData[slug as keyof typeof projectsData];
 
   if (!project) {
