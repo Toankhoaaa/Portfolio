@@ -60,7 +60,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" className="flex items-center gap-2" size="lg">
-                  <Link href="/resume.pdf" target="_blank">
+                  <Link href="./le-dinh-toan-CV.pdf" target="_blank">
                     <Download className="h-4 w-4 mr-1" /> Download Resume
                   </Link>
                 </Button>

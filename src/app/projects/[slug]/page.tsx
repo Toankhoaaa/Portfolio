@@ -53,8 +53,8 @@ const projectsData = {
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "FireBase"],
     icon: <Hexagon className="h-6 w-6" />,
     bgColor: "from-indigo-500/20 to-pink-500/20",
-    demoUrl: "https://your-portfolio.example.com",
-    repoUrl: "https://github.com/Toankhoaaa/portfolio",
+    demoUrl: "https://portfolio-eight-wine-27.vercel.app/",
+    repoUrl: "https://github.com/Toankhoaaa/Portfolio",
     date: "June 2024",
     client: "個人プロジェクト（自己紹介用Webサイト）",
     features: [
